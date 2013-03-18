@@ -7,10 +7,12 @@ gem 'rails', '3.2.11'
 
 gem 'mysql2'
 
-gem 'rspec'
-gem 'rspec-rails'
-gem 'cucumber'
+
 group :test do
+  gem "cucumber-rails-training-wheels"
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara'
