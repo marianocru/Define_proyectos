@@ -12,14 +12,42 @@ Feature: Gestionar proyectos
     Then Espero ver la pagina de datos del proyecto
     And Espero ver un proyecto con "Mi proyecto"
 
-  Scenario: Ver datos de mi proyecto
+  Scenario: Editar datos de mi proyecto
     Given los siguientes proyectos:
-      |id|titulo             |descripcion    |
-      |1|Proyecto 1      |La descripcion 1|
-      |2|Proyecto 2      |La descripcion 2|
-      |3|Proyecto 3      |La descripcion 3|
-    And Voy a la pagina de mostrar datos del proyecto llamado "Proyecto 2"
-    Then Espero ver en titulo "Mostrar Proyecto"
-    And Espero ver el  proyecto con titulo "Mi proyecto"
+      |titulo|descripcion    |
+      |Proyecto 1|La descripcion 1|
+      |Proyecto 2|La descripcion 2|
+      |Proyecto 3|La descripcion 3|
+    And Estoy en la pagina del listado de proyectos
+    And Presiono "Edit" del 2do proyecto
+    Then Espero ver en la pagina "Editing proyecto"
+    And Ingreso in "Titulo" with "Mi proyecto"
+    And Presiono "Update"
+    And Espero ver el mensaje de "El proyecto se ha actualizado."
+    And Espero ver un proyecto con "Mi proyecto"
 
+  Scenario: Eliminar un proyecto
+    Given los siguientes proyectos:
+      |titulo|descripcion    |
+      |Proyecto 1|La descripcion 1|
+      |Proyecto 2|La descripcion 2|
+      |Proyecto 3|La descripcion 3|
+    And Estoy en la pagina del listado de proyectos
+    And Presiono "Destroy" del 2do proyecto
+    Then Espero que la tabla quede como la siguiente:
+      | Titulo     | Descripcion      | Objetivo | Resultado |
+      | Proyecto 1 | La descripcion 1 |          |           |
+      | Proyecto 3 | La descripcion 3 |          |           |
 
+  Scenario: Buscar un proyecto
+    Given los siguientes proyectos:
+      |titulo|descripcion    |
+      |Proyecto 1|La descripcion 1|
+      |Proyecto 2|La descripcion 2|
+      |Proyecto 3|La descripcion 3|
+    And voy a la pagina de buscar proyectos
+    And Ingreso in "Titulo" with "Proyecto 3"
+    And Presiono "Buscar"
+    Then Espero que la tabla quede como la siguiente:
+      | Titulo     | Descripcion      | Objetivo | Resultado |
+      | Proyecto 3 | La descripcion 3 |          |           |

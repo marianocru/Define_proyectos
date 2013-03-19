@@ -18,12 +18,6 @@ module NavigationHelpers
     when /the new meta page/
       new_meta_path
 
-    when /the new meta page/
-      new_meta_path
-
-    when /the new meta page/
-      new_meta_path
-
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
