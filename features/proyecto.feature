@@ -13,10 +13,13 @@ Feature: Gestionar proyectos
     And Espero ver un proyecto con "Mi proyecto"
 
   Scenario: Ver datos de mi proyecto
-    Given estan cargados los siguientes proyectos
-    And Voy a la pagina de mostrar proyecto con id igual a 1
+    Given los siguientes proyectos:
+      |id|titulo             |descripcion    |
+      |1|Proyecto 1      |La descripcion 1|
+      |2|Proyecto 2      |La descripcion 2|
+      |3|Proyecto 3      |La descripcion 3|
+    And Voy a la pagina de mostrar datos del proyecto llamado "Proyecto 2"
     Then Espero ver en titulo "Mostrar Proyecto"
     And Espero ver el  proyecto con titulo "Mi proyecto"
 
-    |titulo             |descripcion    |
-    |Mi Proyecto 1      |La descripcion|
+
