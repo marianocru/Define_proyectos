@@ -57,6 +57,16 @@ Then /^Espero que la tabla quede como la siguiente:$/ do |tabla_esperada|
   tabla_esperada.diff!(table)
 end
 
-Given /^voy a la pagina de buscar proyectos$/ do
-  visit consultar_proyecto_path
+Given /^voy a la pagina de "(.*)" de "(.*)"$/ do |accion, controlador|
+  visit "/#{controlador}/#{accion}"
+end
+
+Then /^Espero que la tabla ajax quede como la siguiente:$/ do |tabla_esperada|
+  rows = find("table").all('tr')
+  table = rows.map { |r| r.all('th,td').map { |c| c.text.strip } }
+  tabla_esperada.diff!(table)
+end
+
+When /^Espero que se complete la respuesta del ajax$/ do
+  page.should have_css("#table")
 end

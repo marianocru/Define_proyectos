@@ -1,0 +1,26 @@
+<% if @proyectos.blank?  %>
+    No hay proyectos encontrados...
+<%else%>
+    <table>
+      <tr>
+        <th>Titulo</th>
+        <th>Descripcion</th>
+        <th>Objetivo</th>
+        <th>Resultado</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <% @proyectos.each do |proyecto| %>
+          <tr>
+            <td><%= proyecto.titulo %></td>
+            <td><%= proyecto.descripcion %></td>
+            <td><%= proyecto.objetivo %></td>
+            <td><%= proyecto.resultado %></td>
+            <td><%= link_to 'Show', proyecto %></td>
+            <td><%= link_to 'Edit', edit_proyecto_path(proyecto) %></td>
+            <td><%= link_to 'Destroy', proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </table>
+<% end %>

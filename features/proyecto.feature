@@ -45,9 +45,9 @@ Feature: Gestionar proyectos
       |Proyecto 1|La descripcion 1|
       |Proyecto 2|La descripcion 2|
       |Proyecto 3|La descripcion 3|
-    And voy a la pagina de buscar proyectos
-    And Ingreso in "Titulo" with "Proyecto 3"
+    And voy a la pagina de "consultar" de "proyectos"
+    And Ingreso in "titulo" with "3"
     And Presiono "Buscar"
-    Then Espero que la tabla quede como la siguiente:
+    Then Espero que la tabla ajax quede como la siguiente:
       | Titulo     | Descripcion      | Objetivo | Resultado |
       | Proyecto 3 | La descripcion 3 |          |           |

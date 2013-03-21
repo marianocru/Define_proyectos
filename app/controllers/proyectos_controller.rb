@@ -80,4 +80,10 @@ class ProyectosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+ def consultar
+   @proyectos = Proyecto.search(params[:titulo])
 end
+
+end
+
