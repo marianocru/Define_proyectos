@@ -16,6 +16,8 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'poltergeist'
+
 end
 
 # Gems used only for assets and not required

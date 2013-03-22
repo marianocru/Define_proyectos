@@ -39,6 +39,7 @@ Feature: Gestionar proyectos
       | Proyecto 1 | La descripcion 1 |          |           |
       | Proyecto 3 | La descripcion 3 |          |           |
 
+  @javascript
   Scenario: Buscar un proyecto
     Given los siguientes proyectos:
       |titulo|descripcion    |

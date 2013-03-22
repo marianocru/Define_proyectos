@@ -68,5 +68,5 @@ Then /^Espero que la tabla ajax quede como la siguiente:$/ do |tabla_esperada|
 end
 
 When /^Espero que se complete la respuesta del ajax$/ do
-  page.should have_css("#table")
+  page.find('div#div_listado_proyectos').should have_content('table')
 end
