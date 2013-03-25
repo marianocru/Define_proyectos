@@ -1,7 +1,8 @@
 <% if @proyectos.blank?  %>
     No hay proyectos encontrados...
 <%else%>
-    <table>
+    <table class='table table-striped'>
+      <thead>
       <tr>
         <th>Titulo</th>
         <th>Descripcion</th>
@@ -11,15 +12,16 @@
         <th></th>
         <th></th>
       </tr>
+      </thead>
       <% @proyectos.each do |proyecto| %>
           <tr>
             <td><%= proyecto.titulo %></td>
             <td><%= proyecto.descripcion %></td>
             <td><%= proyecto.objetivo %></td>
             <td><%= proyecto.resultado %></td>
-            <td><%= link_to 'Show', proyecto %></td>
-            <td><%= link_to 'Edit', edit_proyecto_path(proyecto) %></td>
-            <td><%= link_to 'Destroy', proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to raw("<i class='  icon-info-sign icon-white'></i> #{t('Show')}"), proyecto, :class=>'btn btn-info' %></td>
+            <td><%= link_to raw("<i class=' icon-pencil icon-white'></i> #{t('Edit')}"), edit_proyecto_path(proyecto), :class=>'btn btn-success' %></td>
+            <td><%= link_to raw("<i class='icon-trash icon-white'></i> #{t('Destroy')}"), proyecto, method: :delete, data: { confirm: 'Are you sure?' }, :class=> 'btn btn-danger' %></td>
           </tr>
       <% end %>
     </table>
