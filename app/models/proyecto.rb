@@ -3,6 +3,8 @@ class Proyecto < ActiveRecord::Base
 
   validates :titulo,:descripcion,
            :presence => {:message=>"campo requerido."}
+  validates :descripcion,
+            :presence => {:message=>"campo requerido."}
 
   def self.search(titulo)
       if !(titulo.blank?)
