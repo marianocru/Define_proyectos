@@ -986,7 +986,7 @@ select:focus:required:invalid:focus {
   -moz-box-shadow: 0 0 6px #f8b9b7;
   box-shadow: 0 0 6px #f8b9b7;
 }
-.form-actions {
+.actions {
   padding: 17px 20px 18px;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -994,12 +994,12 @@ select:focus:required:invalid:focus {
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
 }
-.form-actions:before,
-.form-actions:after {
+.actions:before,
+.actions:after {
   display: table;
   content: "";
 }
-.form-actions:after {
+.actions:after {
   clear: both;
 }
 .uneditable-input {
@@ -4514,89 +4514,89 @@ div.subnav .nav > .open > .dropdown-toggle:hover .caret {
 .btn-inverse.active {
   background-color: #2d3f4a \9;
 }
-.control-group.warning > label,
-.control-group.warning .help-block,
-.control-group.warning .help-inline {
+.field.warning > label,
+.field.warning .help-block,
+.field.warning .help-inline {
   color: #e29235;
 }
-.control-group.warning .checkbox,
-.control-group.warning .radio,
-.control-group.warning input,
-.control-group.warning select,
-.control-group.warning textarea {
+.field.warning .checkbox,
+.field.warning .radio,
+.field.warning input,
+.field.warning select,
+.field.warning textarea {
   color: #e29235;
   border-color: #e29235;
 }
-.control-group.warning .checkbox:focus,
-.control-group.warning .radio:focus,
-.control-group.warning input:focus,
-.control-group.warning select:focus,
-.control-group.warning textarea:focus {
+.field.warning .checkbox:focus,
+.field.warning .radio:focus,
+.field.warning input:focus,
+.field.warning select:focus,
+.field.warning textarea:focus {
   border-color: #c7781d;
   -webkit-box-shadow: 0 0 6px #efc28e;
   -moz-box-shadow: 0 0 6px #efc28e;
   box-shadow: 0 0 6px #efc28e;
 }
-.control-group.warning .input-prepend .add-on,
-.control-group.warning .input-append .add-on {
+.field.warning .input-prepend .add-on,
+.field.warning .input-append .add-on {
   color: #e29235;
   background-color: #f5f3b4;
   border-color: #e29235;
 }
-.control-group.error > label,
-.control-group.error .help-block,
-.control-group.error .help-inline {
+.field.error > label,
+.field.error .help-block,
+.field.error .help-inline {
   color: #cc0000;
 }
-.control-group.error .checkbox,
-.control-group.error .radio,
-.control-group.error input,
-.control-group.error select,
-.control-group.error textarea {
+.field.error .checkbox,
+.field.error .radio,
+.field.error input,
+.field.error select,
+.field.error textarea {
   color: #cc0000;
   border-color: #cc0000;
 }
-.control-group.error .checkbox:focus,
-.control-group.error .radio:focus,
-.control-group.error input:focus,
-.control-group.error select:focus,
-.control-group.error textarea:focus {
+.field.error .checkbox:focus,
+.field.error .radio:focus,
+.field.error input:focus,
+.field.error select:focus,
+.field.error textarea:focus {
   border-color: #990000;
   -webkit-box-shadow: 0 0 6px #ff3333;
   -moz-box-shadow: 0 0 6px #ff3333;
   box-shadow: 0 0 6px #ff3333;
 }
-.control-group.error .input-prepend .add-on,
-.control-group.error .input-append .add-on {
+.field.error .input-prepend .add-on,
+.field.error .input-append .add-on {
   color: #cc0000;
   background-color: #ffe9e9;
   border-color: #cc0000;
 }
-.control-group.success > label,
-.control-group.success .help-block,
-.control-group.success .help-inline {
+.field.success > label,
+.field.success .help-block,
+.field.success .help-inline {
   color: #2ba949;
 }
-.control-group.success .checkbox,
-.control-group.success .radio,
-.control-group.success input,
-.control-group.success select,
-.control-group.success textarea {
+.field.success .checkbox,
+.field.success .radio,
+.field.success input,
+.field.success select,
+.field.success textarea {
   color: #2ba949;
   border-color: #2ba949;
 }
-.control-group.success .checkbox:focus,
-.control-group.success .radio:focus,
-.control-group.success input:focus,
-.control-group.success select:focus,
-.control-group.success textarea:focus {
+.field.success .checkbox:focus,
+.field.success .radio:focus,
+.field.success input:focus,
+.field.success select:focus,
+.field.success textarea:focus {
   border-color: #218037;
   -webkit-box-shadow: 0 0 6px #63d77e;
   -moz-box-shadow: 0 0 6px #63d77e;
   box-shadow: 0 0 6px #63d77e;
 }
-.control-group.success .input-prepend .add-on,
-.control-group.success .input-append .add-on {
+.field.success .input-prepend .add-on,
+.field.success .input-append .add-on {
   color: #2ba949;
   background-color: #bedebe;
   border-color: #2ba949;
