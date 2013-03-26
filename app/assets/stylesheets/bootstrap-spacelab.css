@@ -4634,3 +4634,7 @@ div.subnav .nav > .open > .dropdown-toggle:hover .caret {
 .invisible {
   visibility: hidden;
 }
+
+label.required:after {
+    content: " *";
+}

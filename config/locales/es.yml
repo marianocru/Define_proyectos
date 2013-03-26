@@ -1,6 +1,6 @@
  es:
    add: Añadir
-   are_you_sure: ¿ Estas seguro ?
+   are_you_sure?: ¿ Estas seguro ?
    accept: Aceptar
    actions: Acciones
    index: Listado
