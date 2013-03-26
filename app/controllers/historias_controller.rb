@@ -60,7 +60,7 @@ class HistoriasController < ApplicationController
 
     respond_to do |format|
       if @historia.update_attributes(params[:historia])
-        format.html { redirect_to @historia, notice: 'Historia was successfully updated.' }
+        format.html { redirect_to @historia, notice: 'La nueva historia ha sido actualizada.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -80,4 +80,9 @@ class HistoriasController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def consultar
+    @historias = Historia.search(params[:detalle])
+ end
+  
 end

@@ -1,27 +1,10 @@
-<h1>Listing historias</h1>
+<h1>Listado de  historias</h1>
 
-<table>
-  <tr>
-    <th>Detalle</th>
-    <th>Estado</th>
-    <th>Duracion</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @historias.each do |historia| %>
-  <tr>
-    <td><%= historia.detalle %></td>
-    <td><%= historia.estado %></td>
-    <td><%= historia.duracion %></td>
-    <td><%= link_to 'Show', historia %></td>
-    <td><%= link_to 'Edit', edit_historia_path(historia) %></td>
-    <td><%= link_to 'Destroy', historia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+<div id="div_listado_historias" name="listado" >
+  <%= render 'historias/listado_historias'%>
+</div>
 
 <br />
 
-<%= link_to 'New Historia', new_historia_path %>
+
+<%= link_to 'Nueva Historia', new_historia_path, :class=>'btn btn-success' %>

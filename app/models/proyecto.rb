@@ -1,7 +1,7 @@
 class Proyecto < ActiveRecord::Base
   attr_accessible :descripcion, :objetivo, :resultado, :titulo, :estado
 
-  validates :titulo,
+  validates :titulo,:descripcion,
            :presence => {:message=>"campo requerido."}
 
   def self.search(titulo)
