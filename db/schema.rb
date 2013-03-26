@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130326151229) do
+ActiveRecord::Schema.define(:version => 20130326174615) do
 
   create_table "historias", :force => true do |t|
     t.string   "detalle"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20130326151229) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "meta", :force => true do |t|
+  create_table "metas", :force => true do |t|
     t.string   "detalle"
     t.string   "estado"
     t.datetime "created_at", :null => false
