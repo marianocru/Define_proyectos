@@ -1,3 +1,3 @@
-class Metum < ActiveRecord::Base
+class Meta < ActiveRecord::Base
   attr_accessible :detalle, :estado
 end

@@ -1,6 +1,6 @@
-class CreateMeta < ActiveRecord::Migration
+class CreateMetas < ActiveRecord::Migration
   def change
-    create_table :meta do |t|
+    create_table :metas do |t|
       t.string :detalle
       t.string :estado
 
