@@ -1,7 +1,7 @@
 DefineProyectos::Application.routes.draw do
 
+  resources :metas
 
-  resources :meta
 
   match 'historias/consultar', :controller => 'historias', :action => 'consultar'
   resources :historias

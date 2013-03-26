@@ -8,6 +8,7 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
  inflect.irregular 'historia', 'historias'
+ inflect.irregular 'meta', 'metas'
 end
 #
 # These inflection rules are supported but not enabled by default:

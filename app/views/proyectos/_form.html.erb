@@ -12,20 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :titulo, :class=>'control-label' %>
+    <%= f.label :titulo %>
     <%= f.text_field :titulo %>
   </div>
   <div class="field">
-    <%= f.label :descripcion, :class=>'control-label' %>
+    <%= f.label :descripcion %>
     <%= f.text_field :descripcion %>
   </div>
   <div class="field">
-    <%= f.label :objetivo, :class=>'control-label' %>
+    <%= f.label :objetivo %>
     <%= f.text_field :objetivo %>
   </div>
   <div class="field">
-    <%= f.label :resultado, :class=>'control-label' %>
-    <div class='controls'><%= f.text_field :resultado %></div>
+    <%= f.label :resultado %>
+    <%= f.text_field :resultado %>
+
   </div>
   <div class="actions">
     <%= f.submit 'Guardar', :class=>'btn btn-primary' %>
