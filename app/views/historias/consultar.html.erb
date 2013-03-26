@@ -1,0 +1,12 @@
+<h1>New historia</h1>
+
+<div  id="search">
+  <%= form_tag url_for(:action => 'consultar'), {:method => 'get', :id => "formas_search", :remote=> true} do    %>
+      <%= text_field_tag :detalle, params[:detalle] , :placeholder => 'detalle ?'%>
+      <button class="tip-right"><%= submit_tag "Buscar" %></button>
+  <% end %>
+</div>
+
+<div id="div_listado_historias" name="listado" ></div>
+
+<%= link_to 'Back', historias_path %>

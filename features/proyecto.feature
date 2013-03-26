@@ -10,7 +10,7 @@ Feature: Gestionar proyectos
     And Ingreso in "Resultado" with "Mi resultado"
     When Presiono "Create"
     Then Espero ver la pagina de datos del proyecto
-    And Espero ver un proyecto con "Mi proyecto"
+    And Espero ver "Mi proyecto"
 
   Scenario: Editar datos de mi proyecto
     Given los siguientes proyectos:
@@ -19,12 +19,12 @@ Feature: Gestionar proyectos
       |Proyecto 2|La descripcion 2|
       |Proyecto 3|La descripcion 3|
     And Estoy en la pagina del listado de proyectos
-    And Presiono "Edit" del 2do proyecto
+    And Presiono "Edit" del 2do 
     Then Espero ver en la pagina "Editing proyecto"
     And Ingreso in "Titulo" with "Mi proyecto"
     And Presiono "Update"
     And Espero ver el mensaje de "El proyecto se ha actualizado."
-    And Espero ver un proyecto con "Mi proyecto"
+    And Espero ver "Mi proyecto"
 
   Scenario: Eliminar un proyecto
     Given los siguientes proyectos:
@@ -33,7 +33,7 @@ Feature: Gestionar proyectos
       |Proyecto 2|La descripcion 2|
       |Proyecto 3|La descripcion 3|
     And Estoy en la pagina del listado de proyectos
-    And Presiono "Destroy" del 2do proyecto
+    And Presiono "Destroy" del 2do 
     Then Espero que la tabla quede como la siguiente:
       | Titulo     | Descripcion      | Objetivo | Resultado |
       | Proyecto 1 | La descripcion 1 |          |           |
