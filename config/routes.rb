@@ -1,5 +1,8 @@
 DefineProyectos::Application.routes.draw do
 
+  resources :meta
+
+
   resources :historias
 
 
