@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
-
+<div class="alert alert-success">
+<button class="close" data-dismiss="alert">X</button>
+<p><%= notice%></p>
+</div>
 <p>
   <b>Titulo:</b>
   <%= @proyecto.titulo %>
@@ -21,5 +23,17 @@
 </p>
 
 
-<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
-<%= link_to 'Back', proyectos_path %>
+<%= link_to 'Editar', edit_proyecto_path(@proyecto), :class=>"btn btn-mini btn-success" %> |
+<%= link_to 'Atrás', proyectos_path , :class=>"btn btn-mini"%>
+
+<hr>
+
+<%= link_to 'Nueva Meta', {:controller=>"proyectos", :action => 'alta_meta', :id=>@proyecto.id }, :remote=> true  , :class=>"btn btn-mini btn-success"%>
+<br /><br />
+<div id="form_meta">
+
+</div>
+<legend>Metas Registradas</legend>
+<div id="metas">
+  <%= render "metas/listado_metas" %>
+</div>

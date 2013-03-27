@@ -35,6 +35,7 @@ class MetasController < ApplicationController
   # GET /metas/1/edit
   def edit
     @meta = Meta.find(params[:id])
+    @proyecto = Proyecto.find(@meta.proyecto_id)
   end
 
   # POST /metas
@@ -44,11 +45,12 @@ class MetasController < ApplicationController
 
     respond_to do |format|
       if @meta.save
-        format.html { redirect_to @meta, notice: 'Meta was successfully created.' }
-        format.json { render json: @meta, status: :created, location: @meta }
+       @metas = Meta.where('proyecto_id = ?',@meta.proyecto_id).paginate(:per_page => 10, :page => params[:page])
+        format.html { redirect_to @meta, notice: 'La Meta ha sido registrada.' }
+        format.js
       else
         format.html { render action: "new" }
-        format.json { render json: @meta.errors, status: :unprocessable_entity }
+       format.js
       end
     end
   end
@@ -60,11 +62,12 @@ class MetasController < ApplicationController
 
     respond_to do |format|
       if @meta.update_attributes(params[:meta])
-        format.html { redirect_to @meta, notice: 'Meta was successfully updated.' }
-        format.json { head :no_content }
+          @metas = Meta.where('proyecto_id = ?',@meta.proyecto_id).paginate(:per_page => 10, :page => params[:page])
+        format.html { redirect_to @meta, notice: 'La Meta ha sido actualizada.' }
+        format.js
       else
         format.html { render action: "edit" }
-        format.json { render json: @meta.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -77,7 +80,11 @@ class MetasController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to metas_url }
-      format.json { head :no_content }
+      format.js
     end
   end
+  
+   
+  
+  
 end

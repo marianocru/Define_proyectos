@@ -79,6 +79,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.37, RVM: ruby-1.9.2-p320 [plataformadepagos]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v1.3.0, RVM: ruby-1.9.2-p320 [plataformadepagos]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.0.7, RVM: ruby-1.9.2-p320 [plataformadepagos]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.4, RVM: ruby-1.9.2-p320 [plataformadepagos]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v1.0.0, RVM: ruby-1.9.2-p320 [plataformadepagos]) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

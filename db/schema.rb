@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130326174615) do
     t.string   "detalle"
     t.string   "estado"
     t.string   "duracion"
+    t.integer  "meta_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -24,8 +25,9 @@ ActiveRecord::Schema.define(:version => 20130326174615) do
   create_table "metas", :force => true do |t|
     t.string   "detalle"
     t.string   "estado"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "proyecto_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "proyectos", :force => true do |t|

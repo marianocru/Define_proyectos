@@ -4,7 +4,7 @@ class CreateHistorias < ActiveRecord::Migration
       t.string :detalle
       t.string :estado
       t.string :duracion
-
+      t.integer :meta_id
       t.timestamps
     end
   end

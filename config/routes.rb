@@ -1,5 +1,6 @@
 DefineProyectos::Application.routes.draw do
 
+  
   resources :metas
 
 
@@ -7,6 +8,8 @@ DefineProyectos::Application.routes.draw do
   resources :historias
 
 
+  match 'proyectos/cancelar_form_meta', :controller => 'proyectos', :action => 'cancelar_form_meta'
+  match 'proyectos/alta_meta', :controller => 'proyectos', :action => 'alta_meta'
   match 'proyectos/consultar', :controller => 'proyectos', :action => 'consultar'
   resources :proyectos
 
