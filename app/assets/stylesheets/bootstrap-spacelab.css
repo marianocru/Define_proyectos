@@ -4706,4 +4706,15 @@ label.required:after {
     background-image: linear-gradient(top, #f0f0f0, #dadada);
     color: #222222;
     text-shadow: 0 1px 0 #ffffff;
-    cursor: pointer; }
+    cursor: pointer; }}
+
+#logo {
+    background: url("logogringsoft.png") no-repeat scroll 0 0 transparent;
+    height: 31px;
+    left: 15px;
+    line-height: 600px;
+    overflow: hidden;
+    position: relative;
+    top: 24px;
+    width: 191px;
+}
