@@ -14,10 +14,10 @@ class ProyectosController < ApplicationController
   # GET /proyectos/1.json
   def show
     @proyecto = Proyecto.find(params[:id])
-
+    @metas = Meta.where('proyecto_id = ?',@proyecto.id ).paginate(:per_page => 10, :page => params[:page])
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @proyecto }
+      format.js
     end
   end
 
@@ -84,6 +84,26 @@ class ProyectosController < ApplicationController
  def consultar
    @proyectos = Proyecto.search(params[:titulo])
 end
+
+def alta_meta
+  @proyecto = Proyecto.find(params[:id])
+  @meta = Meta.new
+  @historias = Historia.all
+  respond_to do |format|
+     format.html # new.html.erb
+     format.js
+   end
+
+end  
+
+def cancelar_form_meta
+
+   respond_to do |format|
+     format.html # new.html.erb
+     format.js
+   end
+ end
+
 
 end
 
