@@ -1,0 +1,20 @@
+<% if @meta.errors.any? -%>
+    /*Si hay errores*/
+    /*Hide the Flash Notice div*/
+
+
+    /*Update the html of the div customer_errors with the new one*/
+    jQuery("#error_form").html("<div id='error_explanation' class='alert alert-error'><h2> <strong><%= pluralize(@meta.errors.count, 'errore') %> </strong></h2><h4>Meta NO se ​​guardó:</h4><ul><% @meta.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %></ul></div>");
+
+    /*Show the div customer_errors*/
+    jQuery("#error_form").show(300);
+<%else%>
+    /*Hide the div customer_errors*/
+    jQuery("#error_form").hide(300);
+
+    /*Replace the html of the div posts_list with the updated new one*/
+
+$("#metas").html("<%= escape_javascript(render 'metas/listado_metas') %>");
+$("#form_meta").html("<%= escape_javascript(render :inline=>'') %>");
+
+<%end%>
