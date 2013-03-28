@@ -1,9 +1,9 @@
 DefineProyectos::Application.routes.draw do
 
   
-  match ':metas/editar_meta', :controller => ':metas', :action => 'editar_historia'
-  match ':metas/cancelar_form_meta', :controller => ':metas', :action => 'cancelar_form_historia'
-  match ':metas/alta_meta', :controller => ':metas', :action => 'alta_historia'
+  match 'metas/editar_meta', :controller => 'metas', :action => 'editar_historia'
+  match 'metas/cancelar_form_meta', :controller => 'metas', :action => 'cancelar_form_historia'
+  match 'metas/alta_historia', :controller => 'metas', :action => 'alta_historia'
   resources :metas
 
 

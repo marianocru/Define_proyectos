@@ -11,5 +11,16 @@
 </p>
 
 
-<%= link_to 'Edit', edit_meta_path(@meta) %> |
-<%= link_to 'Back', metas_path %>
+<%= link_to 'Editar', edit_meta_path(@meta), :class=>"btn btn-mini btn-success"  %> |
+<%= link_to 'Volver', metas_path, :class=>"btn btn-mini" %>
+<hr>
+
+<%= link_to 'Nueva Historia', {:controller=>"metas", :action => 'alta_historia', :id=>@meta.id }, :remote=> true  , :class=>"btn btn-mini btn-success"%>
+<br /><br />
+<div id="form_historia">
+
+</div>
+<legend>Historias Registradas</legend>
+<div id="historias">
+  <%= render "historias/listado_historias" %>
+</div>
