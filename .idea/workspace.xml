@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="646e0310-e6a7-4c4c-8b29-f8415ae3b223" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/historias_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/historias_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/metas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/metas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/historias/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/historias/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/historias/_listado_historias.html.erb" afterPath="$PROJECT_DIR$/app/views/historias/_listado_historias.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/historias/show.html.erb" afterPath="$PROJECT_DIR$/app/views/historias/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/metas/show.html.erb" afterPath="$PROJECT_DIR$/app/views/metas/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/proyectos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/proyectos/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <file path="/Dummy.txt" changelist="646e0310-e6a7-4c4c-8b29-f8415ae3b223" time="1364391529378" ignored="false" />
     <file path="/bootstrap-spacelab.css" changelist="646e0310-e6a7-4c4c-8b29-f8415ae3b223" time="1364327820342" ignored="false" />
@@ -536,7 +530,15 @@
       <created>1364423464722</created>
       <updated>1364423464722</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="historias-metas&#10;">
+      <created>1364487445043</created>
+      <updated>1364487445043</updated>
+    </task>
+    <task id="LOCAL-00011" summary="historias-metas&#10;">
+      <created>1364487461016</created>
+      <updated>1364487461016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -619,7 +621,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="metas&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="historias-metas&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -635,6 +637,7 @@
     <MESSAGE value="historia" />
     <MESSAGE value="Historia" />
     <MESSAGE value="metas&#10;" />
+    <MESSAGE value="historias-metas&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
