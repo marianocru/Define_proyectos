@@ -3037,6 +3037,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .btn-group .btn {
   margin: 0;
+  top:-80px;
 }
 .navbar-form {
   margin-bottom: 0;
@@ -4710,11 +4711,11 @@ label.required:after {
 
 #logo {
     background: url("logogringsoft.png") no-repeat scroll 0 0 transparent;
-    height: 31px;
-    left: 15px;
+    height: 55px;
+    left: 0px;
     line-height: 600px;
     overflow: hidden;
     position: relative;
-    top: 24px;
-    width: 191px;
+    top: 1px;
+    width: 163px;
 }
