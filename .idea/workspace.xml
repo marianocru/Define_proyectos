@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="646e0310-e6a7-4c4c-8b29-f8415ae3b223" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/logogringsoft.png" afterPath="$PROJECT_DIR$/app/assets/images/logogringsoft.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/historias/show.html.erb" afterPath="$PROJECT_DIR$/app/views/historias/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/metas/show.html.erb" afterPath="$PROJECT_DIR$/app/views/metas/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/layout.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/layout.html.erb" />
     </list>
     <file path="/Dummy.txt" changelist="646e0310-e6a7-4c4c-8b29-f8415ae3b223" time="1364391529378" ignored="false" />
     <file path="/bootstrap-spacelab.css" changelist="646e0310-e6a7-4c4c-8b29-f8415ae3b223" time="1364327820342" ignored="false" />
@@ -37,7 +38,7 @@
       <file leaf-file-name="layout.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/layout.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="30" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0">
+            <state line="62" column="30" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="bootstrap-spacelab.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4642" column="38" selection-start="112343" selection-end="112343" vertical-scroll-proportion="0.036231883">
+            <state line="4643" column="38" selection-start="112356" selection-end="112356" vertical-scroll-proportion="0.036231883">
               <folding />
             </state>
           </provider>
@@ -76,8 +77,8 @@
         <option value="$PROJECT_DIR$/features/step_definitions/general_steps.rb" />
         <option value="$PROJECT_DIR$/features/proyecto.feature" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/layout.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css" />
       </list>
     </option>
   </component>
@@ -538,7 +539,11 @@
       <created>1364487461016</created>
       <updated>1364487461016</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="historias-metas&#10;">
+      <created>1364488892747</created>
+      <updated>1364488892747</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -645,7 +650,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap-spacelab.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4642" column="38" selection-start="112343" selection-end="112343" vertical-scroll-proportion="0.036231883">
+        <state line="4643" column="38" selection-start="112356" selection-end="112356" vertical-scroll-proportion="0.036231883">
           <folding />
         </state>
       </provider>
