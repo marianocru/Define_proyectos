@@ -1,11 +1,11 @@
 <% if @historias.blank?  %>
-    No hay historias encontrados...
+    No hay historias encontradas...
 <%else%>
-    <table>
+    <table class="table table-condensed">
       <tr>
         <th>Detalle</th>
         <th>Estado</th>
-        <th>Duracion</th>
+        <th>Duración</th>
         
         <th></th>
         <th></th>
@@ -16,9 +16,13 @@
             <td><%= historia.detalle %></td>
             <td><%= historia.estado %></td>
             <td><%= historia.duracion %></td>
-		  <td><%= link_to 'Show', historia %></td>
-            <td><%= link_to 'Edit', edit_historia_path(historia) %></td>
-            <td><%= link_to 'Destroy', historia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		  <td><%= link_to raw("<i class='  icon-info-sign icon-white'></i> #{t('Show')}"), historia, :class=>'btn btn-info' %></td></td>
+            <td><%= link_to raw("<i class=' icon-pencil icon-white'></i> #{t('Edit')}"), {:controller=>"metas", :action => 'editar_historia', :id=>historia }, :remote=> true  , :class=>'btn btn-success' %></td>
+	
+            <td><div id="dato<%=historia.id%>"><%= link_to raw("<i class='icon-trash icon-white'></i> #{t('Destroy')}"), historia, :remote => true,method: :delete, data: { confirm: 'Are you sure?' }, :class=> 'btn btn-danger' %>
+		  </div>
+		  </td>
+		 
           </tr>
       <% end %>
     </table>

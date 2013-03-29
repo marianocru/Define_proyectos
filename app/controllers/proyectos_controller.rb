@@ -88,13 +88,24 @@ end
 def alta_meta
   @proyecto = Proyecto.find(params[:id])
   @meta = Meta.new
-  @historias = Historia.all
+ 
   respond_to do |format|
      format.html # new.html.erb
      format.js
    end
 
 end  
+
+def editar_meta
+  @meta = Meta.find(params[:id])
+  @proyecto = Proyecto.find(@meta.proyecto_id)
+  respond_to do |format|
+     format.html # new.html.erb
+     format.js
+   end
+
+end  
+
 
 def cancelar_form_meta
 

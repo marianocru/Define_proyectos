@@ -44,11 +44,12 @@ class HistoriasController < ApplicationController
 
     respond_to do |format|
       if @historia.save
+        @historias = Historia.where('meta_id = ?',@historia.meta_id ).paginate(:per_page => 10, :page => params[:page])
         format.html { redirect_to @historia, notice: 'La nueva historia ha sido registrada.' }
-        format.json { render json: @historia, status: :created, location: @historia }
+        format.js
       else
         format.html { render action: "new" }
-        format.json { render json: @historia.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -57,14 +58,14 @@ class HistoriasController < ApplicationController
   # PUT /historias/1.json
   def update
     @historia = Historia.find(params[:id])
-
+ @historias = Historia.where('meta_id = ?',@historia.meta_id ).paginate(:per_page => 10, :page => params[:page])
     respond_to do |format|
       if @historia.update_attributes(params[:historia])
         format.html { redirect_to @historia, notice: 'La nueva historia ha sido actualizada.' }
-        format.json { head :no_content }
+       format.js
       else
         format.html { render action: "edit" }
-        format.json { render json: @historia.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -77,7 +78,7 @@ class HistoriasController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to historias_url }
-      format.json { head :no_content }
+      format.js
     end
   end
   

@@ -16,7 +16,8 @@
             <td><%= meta.detalle %></td>
             <td><%= meta.estado %></td>
 		  <td><%= link_to raw("<i class='  icon-info-sign icon-white'></i> #{t('Show')}"), meta, :class=>'btn btn-info' %></td></td>
-            <td><%= link_to raw("<i class=' icon-pencil icon-white'></i> #{t('Edit')}"), edit_meta_path(meta), :class=>'btn btn-success' %></td>
+            <td><%= link_to raw("<i class=' icon-pencil icon-white'></i> #{t('Edit')}"), {:controller=>"proyectos", :action => 'editar_meta', :id=>meta }, :remote=> true  , :class=>'btn btn-success' %></td>
+	
             <td><div id="dato<%=meta.id%>"><%= link_to raw("<i class='icon-trash icon-white'></i> #{t('Destroy')}"), meta, :remote => true,method: :delete, data: { confirm: 'Are you sure?' }, :class=> 'btn btn-danger' %>
 		  </div>
 		  </td>

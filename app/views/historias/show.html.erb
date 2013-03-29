@@ -17,4 +17,4 @@
 
 
 <%= link_to 'Editar', edit_historia_path(@historia) , :class=>"btn btn-mini btn-inverse" %> |
-<%= link_to 'Atrás', historias_path , :class=>"btn btn-mini"%>
+<%= link_to 'Atrás', metas_path + '/' + @historia.meta_id.to_s, :class=>"btn btn-mini"%>

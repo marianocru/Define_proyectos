@@ -14,10 +14,11 @@ class MetasController < ApplicationController
   # GET /metas/1.json
   def show
     @meta = Meta.find(params[:id])
-
+    @historias = Historia.where('meta_id = ?',@meta.id ).paginate(:per_page => 10, :page => params[:page])
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @meta }
+      format.js
+    
     end
   end
 
@@ -84,7 +85,35 @@ class MetasController < ApplicationController
     end
   end
   
-   
+  def alta_historia
+    @meta = Meta.find(params[:id])
+    @historia = Historia.new
+ 
+    respond_to do |format|
+       format.html # new.html.erb
+       format.js
+     end
+
+  end  
+
+  def editar_historia
+    @historia = Historia.find(params[:id])
+    @meta = Meta.find(@historia.meta_id)
+    respond_to do |format|
+       format.html # new.html.erb
+       format.js
+     end
+
+  end  
+
+
+  def cancelar_form_historia
+
+     respond_to do |format|
+       format.html # new.html.erb
+       format.js
+     end
+   end  
   
   
 end
