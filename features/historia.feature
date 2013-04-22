@@ -25,7 +25,7 @@ Feature: Gestionar historia
       And mensaje de actualizacion de registro ok en pagina
       And Espero ver "nuevo estado"
       
-      Scenario: Eliminar una historia
+  Scenario: Eliminar una historia
         Given las siguientes historias:
         |detalle|estado|duracion|
         |Detalle 1|Estado 1|Duracion 1|

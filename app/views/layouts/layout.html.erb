@@ -79,7 +79,7 @@
 				<!-- user dropdown starts -->
 				<div class="btn-group pull-right" >
 					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-user"></i><span class="hidden-phone"> admin</span>
+						<i class="icon-user"></i><span class="hidden-phone"> <%= session[:usuario_apellido_nombre]%></span>
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
@@ -101,11 +101,11 @@
 			<div class="span2 main-menu-span">
 				<div class="well nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li class="nav-header hidden-tablet">Main</li>
+						<li class="nav-header hidden-tablet">Menú Principal</li>
                       <li><%= link_to raw("<i class='icon-folder-open'></i><span class='hidden-tablet'> Proyectos</span>"), proyectos_path, :class=>'ajax-link' %></li>
 
 					</ul>
-					<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
+					
 				</div><!--/.well -->
 			</div><!--/span-->
 			<!-- left menu ends -->
@@ -127,7 +127,7 @@
 						<a href="#">Home</a> <span class="divider">/</span>
 					</li>
 					<li>
-						<a href="#">Tables</a>
+						<a href="#"><%= @current_action %></a>
 					</li>
 				</ul>
 			</div>
