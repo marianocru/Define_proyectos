@@ -14,7 +14,7 @@ development:
   database: Define_proyectos_development
   pool: 5
   username: postgres
-  password: root
+  password: postgres
   host: localhost
   port: 5432
 
@@ -28,7 +28,7 @@ test: &test
   database: Define_proyectos_test
   pool: 5
   username: postgres
-  password: root
+  password: postgres
   host: localhost
   port: 5432
  
@@ -39,7 +39,7 @@ production:
   reconnect: false
   database: Define_proyectos_production
   username: postgres
-  password: root
+  password: postgres
   host: localhost
   port: 5432
  
