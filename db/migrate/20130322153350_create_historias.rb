@@ -8,4 +8,5 @@ class CreateHistorias < ActiveRecord::Migration
       t.timestamps
     end
   end
+
 end
